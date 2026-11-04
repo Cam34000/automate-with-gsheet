@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          pip install sqlalchemy psycopg2-binary
+          pip install sqlalchemy "psycopg[binary]"
 
       - name: Run ETL
         env:
